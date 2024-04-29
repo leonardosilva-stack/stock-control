@@ -1,0 +1,44 @@
+<div class="l-grid h-screen">
+  <div class=" lg:block hidden">
+    <img class="w-full h-screen " src="../../../assets/sean-pollock-PhYq704ffdA-unsplash.jpg" alt="">
+  </div>
+
+  <div class="l-bg">
+    <div class="flex justify-content-center align-content-center text-align-center">
+      <!-- LOGIN -->
+      <form action="" class="l-form" *ngIf="loginCard">
+        <h2 class="font-bold">Acessar Conta</h2>
+        <input class="w-full" type="email" pInputText placeholder="E-mail">
+
+        <input class="w-full" type="password" pInputText placeholder="Senha">
+
+        <button class="w-full" type="submit">Login</button>
+
+        <span class="flex justify-content-center font-semibold cursor-pointer" (click)="loginCard = !loginCard">
+          Criar Conta
+        </span>
+      </form>
+
+      <!-- SIGNUP -->
+      <!-- LOGIN -->
+      <form action="" class="l-form" *ngIf="!loginCard">
+
+        <h2 class="font-bold">Criar Conta</h2>
+
+        <input class="w-full" type="text" pInputText placeholder="Nome">
+        <input class="w-full" type="email" pInputText placeholder="E-mail">
+
+
+        <input class="w-full" type="password" pInputText placeholder="Senha">
+
+
+        <button class="w-full" type="submit">Criar Conta</button>
+
+        <span class="flex justify-content-center font-semibold cursor-pointer" (click)="loginCard = !loginCard">
+          Fazer Login
+        </span>
+
+      </form>
+    </div>
+  </div>
+</div>

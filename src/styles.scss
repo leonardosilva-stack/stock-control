@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  --type-first: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #003556;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #d4953a;
+  border-radius: 10px;
+}
+
+body {
+  margin: 0px;
+  color: #000;
+  font-family: var(--type-first);
+  background-color: #e6e6e6;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1rem;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
